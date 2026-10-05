@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<title>ПОЛЯРНЫЙ КОВЧЕГ</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+  <canvas id="cv"></canvas>
+
+  <header id="top">
+    <div class="pill" id="pCoin"><span id="icCoin"></span><b id="vCoin">0</b><button class="plus" id="bPlus" aria-label="+"></button></div>
+    <div class="pill small" id="pOs" title=""><span id="icOs"></span><b id="vOs">0</b><i class="osbar"><u id="osFill"></u></i></div>
+    <div class="pill small zone" id="pZone" title=""><i class="zdot"></i><span id="vZone"></span></div>
+    <div class="pill small" id="pSci" title=""><span id="icSci"></span><b id="vSci">0</b></div>
+    <button class="rbtn" id="bSet" aria-label="settings"></button>
+  </header>
+
+  <section id="goalCard" class="glass">
+    <div class="gtxt"><small id="gLbl"></small><span id="gText"></span></div>
+    <div class="gbar"><u id="gFill"></u><em id="gNum"></em></div>
+    <button class="claim" id="bClaim"></button>
+  </section>
+
+  <div id="envChip" class="chip glass"></div>
+  <canvas id="mini" width="168" height="168"></canvas>
+  <div id="side">
+    <button class="fab" id="bHome"><span id="icHome"></span><small id="lHome"></small></button>
+    <button class="fab ad" id="bX2"><span id="icX2"></span><small id="lX2"></small></button>
+    <button class="fab gift" id="bDaily"><span id="icGift"></span></button>
+  </div>
+  <div id="hintTxt"></div>
+
+  <section id="bars">
+    <div class="bar heat"><span id="icHeat"></span><div class="bt"><u id="heatFill"></u><em id="heatNum"></em></div></div>
+    <div class="bar cargo"><span id="icCargo"></span><div class="bt"><u id="cargoFill"></u><em id="cargoNum"></em></div></div>
+  </section>
+
+  <nav id="dock">
+    <button class="dk" id="dBuild"><span></span><small></small><i class="dot"></i></button>
+    <button class="dk" id="dTree"><span></span><small></small><i class="dot"></i></button>
+    <button class="dk" id="dRadio"><span></span><small></small><i class="dot"></i></button>
+    <button class="dk" id="dRelics"><span></span><small></small><i class="dot"></i></button>
+    <button class="dk" id="dLegacy"><span></span><small></small><i class="dot"></i></button>
+    <button class="dk" id="dShop"><span></span><small></small><i class="dot"></i></button>
+  </nav>
+  <div id="toasts"></div>
+</div>
+
+<div id="modal" class="hidden"><div class="sheet"><header><h2 id="mTitle"></h2><button class="x" id="mClose" aria-label="close"></button></header><div class="mbody" id="mBody"></div></div></div>
+<div id="tut" class="hidden"><div class="tbox glass"><p id="tTxt"></p><button class="cta" id="tBtn"></button></div></div>
+<div id="boot"><div class="bwrap"><div class="blogo"></div><b id="bTitle"></b><small id="bSub"></small><div class="bload"><u></u></div></div></div>
+
+<script src="js/platform.js"></script>
+<script src="js/data.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/core.js"></script>
+<script src="js/art.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/render.js"></script>
+<script src="js/ui.js"></script>
+</body>
+</html>

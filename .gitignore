@@ -1,0 +1,4 @@
+build/
+vk/
+*.zip
+__pycache__/
